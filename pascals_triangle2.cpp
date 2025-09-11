@@ -6,16 +6,15 @@ using namespace std;
 // 198. Pascal's Triangle II
 // given an integer rowIndex, return the rowIndexth row of Pascal's triangle
 
+// solution has space complexity O(rowIndex+1)
+
 class Solution
 {
 public:
     vector<int> getRow(int rowIndex)
     {
-
-        int numRows = rowIndex + 1;
-        vector<int> currRow(numRows, 1);
-
-        for (int i = 1; i < numRows; i++)
+        vector<int> currRow(rowIndex + 1, 1);
+        for (int i = 1; i < rowIndex + 1; i++)
         {
             for (int j = i - 1; j > 0; j--)
             {
