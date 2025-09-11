@@ -1,6 +1,8 @@
 #include <iostream>
 #include "vector_helper.h"
 
+#include <unordered_map>
+
 using namespace std; // only doing this bc it's leetcode
 
 // given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target
@@ -21,7 +23,7 @@ private:
 public:
     Solution() : indices{0, 1}, values{0, 0} {}
 
-    vector<int> twoSum(vector<int>& nums, int target)
+    vector<int> twoSumSlow(vector<int>& nums, int target) // time complexity O(n^2)
     {
         ResetIndices();
 
@@ -43,7 +45,28 @@ public:
                 indices[1] = indices[0] + 1;
             }
         }
-
+        return indices;
+    }
+    
+    vector<int> twoSumFast(vector<int>& nums, int target) // sacrifice space for O(n) time
+    {
+        unordered_map<int, int> read;
+        
+        for (int i = 0; i < nums.size(); i++)
+        {
+            int complement = target - nums[i];
+            if (read.find(complement) != read.end()) // .end() returns invalid element, .find an iterator to complement
+            {
+                indices[0] = i;
+                indices[1] = read[complement];
+                return indices;
+            }
+            else
+            {
+                read[nums[i]] = i; // add to map and move on
+            }
+            
+        }
         return indices;
     }
 };
@@ -60,9 +83,9 @@ int main()
     int target2 = 6;
     int target3 = 6;
 
-    vector<int> answer1 = solution.twoSum(nums1, target1);
-    vector<int> answer2 = solution.twoSum(nums2, target2);
-    vector<int> answer3 = solution.twoSum(nums3, target3);
+    vector<int> answer1 = solution.twoSumFast(nums1, target1);
+    vector<int> answer2 = solution.twoSumFast(nums2, target2);
+    vector<int> answer3 = solution.twoSumFast(nums3, target3);
 
     cout << answer1 << endl;
     cout << answer2 << endl;
