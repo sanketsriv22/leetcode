@@ -5,7 +5,11 @@
             "type": "shell",
             "label": "CMake Configure",
             "command": "cmake",
-            "args": ["-B", "build", "."],
+            "args": [
+                "-B",
+                "build",
+                "."
+            ],
             "group": "build",
             "problemMatcher": []
         },
@@ -13,13 +17,16 @@
             "type": "cmake",
             "label": "Build Current File",
             "command": "build",
-            "targets": ["${fileBasenameNoExtension}"],
+            "targets": [
+                "${fileBasenameNoExtension}"
+            ],
             "group": {
                 "kind": "build",
                 "isDefault": true
             },
-            "problemMatcher": ["$gcc"],
-            // "dependsOn": "CMake Configure"
+            "problemMatcher": [
+                "$gcc"
+            ]
         },
         {
             "type": "shell",
@@ -42,6 +49,6 @@
                 "Build Current File",
                 "Run Current Executable"
             ]
-        }
+        },
     ]
 }
