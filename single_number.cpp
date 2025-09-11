@@ -12,7 +12,7 @@ class Solution
 public:
     int singleNumber(vector<int>& nums)
     {
-        int store;; // O(1) space
+        int store = 0; // O(1) space
         for (int num : nums)
             store = store xor num; 
         return store;
@@ -24,7 +24,7 @@ int main()
 {
     Solution solution = Solution();
 
-    vector<int> nums = { 1, 2, 3, 4, 4, 5 };
+    vector<int> nums = { 1, 1, 3, 4, 4, 5, 5 };
 
     int num = solution.singleNumber(nums);
 
