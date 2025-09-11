@@ -1,6 +1,2 @@
 # build folder
 build/
-
-# VSCode
-.vscode/
-./CMakeLists.txt
