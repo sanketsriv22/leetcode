@@ -1,0 +1,38 @@
+[
+{
+  "directory": "/Users/sanket/Desktop/c_projects/leetcode/build",
+  "command": "/usr/bin/clang++   -g -O0 -std=gnu++20 -arch arm64 -o CMakeFiles/CMakeCXXCompilerId.dir/CMakeFiles/4.1.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o -c /Users/sanket/Desktop/c_projects/leetcode/build/CMakeFiles/4.1.1/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+  "file": "/Users/sanket/Desktop/c_projects/leetcode/build/CMakeFiles/4.1.1/CompilerIdCXX/CMakeCXXCompilerId.cpp",
+  "output": "CMakeFiles/CMakeCXXCompilerId.dir/CMakeFiles/4.1.1/CompilerIdCXX/CMakeCXXCompilerId.cpp.o"
+},
+{
+  "directory": "/Users/sanket/Desktop/c_projects/leetcode/build",
+  "command": "/usr/bin/clang++   -g -O0 -std=gnu++20 -arch arm64 -o CMakeFiles/apple-sdk.dir/CMakeFiles/4.1.1/CompilerIdCXX/apple-sdk.cpp.o -c /Users/sanket/Desktop/c_projects/leetcode/build/CMakeFiles/4.1.1/CompilerIdCXX/apple-sdk.cpp",
+  "file": "/Users/sanket/Desktop/c_projects/leetcode/build/CMakeFiles/4.1.1/CompilerIdCXX/apple-sdk.cpp",
+  "output": "CMakeFiles/apple-sdk.dir/CMakeFiles/4.1.1/CompilerIdCXX/apple-sdk.cpp.o"
+},
+{
+  "directory": "/Users/sanket/Desktop/c_projects/leetcode/build",
+  "command": "/usr/bin/clang++   -g -O0 -std=gnu++20 -arch arm64 -o CMakeFiles/move_zeroes.dir/move_zeroes.cpp.o -c /Users/sanket/Desktop/c_projects/leetcode/move_zeroes.cpp",
+  "file": "/Users/sanket/Desktop/c_projects/leetcode/move_zeroes.cpp",
+  "output": "CMakeFiles/move_zeroes.dir/move_zeroes.cpp.o"
+},
+{
+  "directory": "/Users/sanket/Desktop/c_projects/leetcode/build",
+  "command": "/usr/bin/clang++   -g -O0 -std=gnu++20 -arch arm64 -o CMakeFiles/testing.dir/testing.cpp.o -c /Users/sanket/Desktop/c_projects/leetcode/testing.cpp",
+  "file": "/Users/sanket/Desktop/c_projects/leetcode/testing.cpp",
+  "output": "CMakeFiles/testing.dir/testing.cpp.o"
+},
+{
+  "directory": "/Users/sanket/Desktop/c_projects/leetcode/build",
+  "command": "/usr/bin/clang++   -g -O0 -std=gnu++20 -arch arm64 -o CMakeFiles/testing2.dir/testing2.cpp.o -c /Users/sanket/Desktop/c_projects/leetcode/testing2.cpp",
+  "file": "/Users/sanket/Desktop/c_projects/leetcode/testing2.cpp",
+  "output": "CMakeFiles/testing2.dir/testing2.cpp.o"
+},
+{
+  "directory": "/Users/sanket/Desktop/c_projects/leetcode/build",
+  "command": "/usr/bin/clang++   -g -O0 -std=gnu++20 -arch arm64 -o CMakeFiles/testing5.dir/testing5.cpp.o -c /Users/sanket/Desktop/c_projects/leetcode/testing5.cpp",
+  "file": "/Users/sanket/Desktop/c_projects/leetcode/testing5.cpp",
+  "output": "CMakeFiles/testing5.dir/testing5.cpp.o"
+}
+]
