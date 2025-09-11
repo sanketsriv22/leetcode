@@ -25,6 +25,13 @@ file(GLOB_RECURSE SOLUTIONS CMAKE_CONFIGURE_DEPENDS "*.cpp")
 foreach(solution ${SOLUTIONS})
     get_filename_component(exe_name ${solution} NAME_WE)
     add_executable(${exe_name} ${solution})
+
+    # Include directories
+    target_include_directories(${exe_name} PRIVATE
+    # ${CMAKE_SOURCE_DIR}/external
+    ${CMAKE_SOURCE_DIR}/utils
+)
+
 endforeach()
 
 message(STATUS "Found SOLUTIONS: ${SOLUTIONS}")
@@ -32,11 +39,7 @@ message(STATUS "Found SOLUTIONS: ${SOLUTIONS}")
 # Add executable
 # add_executable(leetcode ${SOLUTIONS})
 
-# Include directories
-target_include_directories(${exe_name} PRIVATE
-    # ${CMAKE_SOURCE_DIR}/external
-    ${CMAKE_SOURCE_DIR}/utils
-)
+
 
 # find_package(glfw3 REQUIRED)
 # target_link_libraries(orderbook PRIVATE glfw)
