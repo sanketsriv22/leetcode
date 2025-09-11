@@ -43,7 +43,8 @@
         "ratio": "cpp",
         "sstream": "cpp",
         "variant": "cpp",
-        "algorithm": "cpp"
+        "algorithm": "cpp",
+        "vector": "cpp"
     },
     "editor.fontFamily": "JetBrains Mono",
     "editor.parameterHints.enabled": true,

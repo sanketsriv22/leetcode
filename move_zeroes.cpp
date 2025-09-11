@@ -1,7 +1,5 @@
 #include <iostream>
-#include <vector>
-
-using Vector= std::vector<int>;
+#include <vector_helper.h>
 
 class Solution {
 private:
@@ -17,7 +15,7 @@ private:
 public:
     Solution() : pointers{0, 0, 1, 0} {}
 
-    void moveZeroes(Vector& nums) {
+    void moveZeroes(intVector& nums) {
 
         if (nums.size() == 1) { return; }
 
@@ -46,25 +44,13 @@ public:
     }
 };
 
-// cool way to print a vector with overloading. probably should put this in a header file
-std::ostream& operator<<(std::ostream& stream, const Vector &vector)
-{
-    stream << "[";
-    for (size_t i = 0; i < vector.size(); i++)
-    {
-        stream << vector[i];
-        if (i < vector.size() - 1) { stream << ", "; }
-    }
-    stream << "]";
-    return stream;
-}
 
 int main()
 {
     std::cout << "283. Move Zeroes" << std::endl;
     Solution solve = Solution();
     
-    Vector test1 = Vector{0, 1, 0, 3, 12};
+    intVector test1 = intVector{0, 1, 0, 3, 12};
     
     solve.moveZeroes(test1);
 
