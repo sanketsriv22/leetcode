@@ -36,6 +36,7 @@ public:
             return; // don't add this candidate for combo
         }
 
+        // keep adding
         for (int i = startIndex; i < candidates.size(); i++)
         {
             // add current candidate
@@ -46,7 +47,7 @@ public:
             backtrack(candidates, currCombination, result, i, remainingTarget);
 
             // overshot
-            remainingTarget += currCombination.back();
+            remainingTarget += currCombination.back(); // reset remainingTarget
             currCombination.pop_back();
         }
     }
